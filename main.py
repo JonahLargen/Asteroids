@@ -40,6 +40,10 @@ def main():
             if player.check_for_collisions(a):
                 print("Game over!")
                 raise SystemExit()
+            for s in shots:
+                if a.check_for_collisions(s):
+                    a.kill()
+                    s.kill()
             
         pygame.Surface.fill(screen, (0, 0, 0, 1))
         
