@@ -29,13 +29,20 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
+            
         for u in updatable:
             u.update(dt)
-        #player.update(dt)
+        
+        for a in asteroids:
+            if player.check_for_collisions(a):
+                print("Game over!")
+                raise SystemExit()
+            
         pygame.Surface.fill(screen, (0, 0, 0, 1))
+        
         for d in drawable:
             d.draw(screen)
-        #player.draw(screen)
+            
         pygame.display.flip()
         
         dt = clock.tick(60) / 1000
