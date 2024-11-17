@@ -42,7 +42,7 @@ def main():
                 raise SystemExit()
             for s in shots:
                 if a.check_for_collisions(s):
-                    a.kill()
+                    a.split()
                     s.kill()
             
         pygame.Surface.fill(screen, (0, 0, 0, 1))
