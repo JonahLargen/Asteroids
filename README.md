@@ -21,7 +21,7 @@ python3 main.py
 
 ## How to play
 
-<img src="asteroids.jpg" width="128" alt="Asteroids">
+<img src="pygame.png" width="512" alt="Asteroids">
 
 1. Control your ship's movement with the WASD keys.
 2. Press space to shoot (note there is a cooldown between shots)
