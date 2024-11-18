@@ -26,6 +26,16 @@ class Player(CircleShape):
         
     def update(self, dt):
         self.shoot_timer -= dt
+        
+        if (self.position.x <= PLAYER_EDGE_BUFFER):
+            self.position.x = PLAYER_EDGE_BUFFER
+        if (self.position.x >= SCREEN_WIDTH - PLAYER_EDGE_BUFFER):
+            self.position.x = SCREEN_WIDTH - PLAYER_EDGE_BUFFER
+        if (self.position.y <= PLAYER_EDGE_BUFFER):
+            self.position.y = PLAYER_EDGE_BUFFER
+        if (self.position.y >= SCREEN_HEIGHT - PLAYER_EDGE_BUFFER):
+            self.position.y = SCREEN_HEIGHT - PLAYER_EDGE_BUFFER
+        
         keys = pygame.key.get_pressed()
 
         if keys[pygame.K_a]:
