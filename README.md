@@ -25,8 +25,7 @@ python3 main.py
 
 1. Control your ship's movement with the WASD keys.
 2. Press space to shoot (note there is a cooldown between shots)
-3. Be careful! Asteroids speed up when split.
-4. Destroy as many asteroids as possible without colliding and maximize your score!
+3. Destroy as many asteroids as possible without colliding and maximize your score!
 
 &nbsp;
 
