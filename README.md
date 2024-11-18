@@ -7,7 +7,7 @@ A rudimentary version of Atari Asteroids written using the [pygame]("https://www
 
 ## Installation Instructions
 
-1. Install [pygame]("https://www.pygame.org/wiki/GettingStarted").
+1. Install [pygame]("https://www.pygame.org/wiki/GettingStarted")
 
 ```
 python3 -m pip install -U pygame --user
@@ -24,7 +24,7 @@ python3 main.py
 <img src="pygame.png" width="512" alt="Asteroids">
 
 1. Control your ship's movement with the WASD keys.
-2. Press space to shoot (note there is a cooldown between shots)
+2. Press space to shoot (note there is a cooldown between shots).
 3. Destroy as many asteroids as possible without colliding and maximize your score!
 
 &nbsp;
