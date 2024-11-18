@@ -13,7 +13,11 @@ A rudimentary version of Atari Asteroids written using the [pygame]("https://www
 python3 -m pip install -U pygame --user
 ```
 
-2. Run the game
+2. Alter settings
+
+You can edit the `contants.py` to change the game's settings, if you wish
+
+3. Run the game
 
 ```
 python3 main.py
